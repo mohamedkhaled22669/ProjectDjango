@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <title>Document</title>
+    
+</head>
+<body>
+    <div style="width: 40%;  margin: auto;  margin-top:23vh; padding: 0 30px; background-color: #302d2d;color:white">
+        <h2 style="padding: 30px 0px 24px 0; text-align: center;"><span>FORM </span> LOGIN</h2>
+        
+
+        <form name="form" action="/sign/login/accept/" method="POST">{% csrf_token %}
+            <label for="email" style="text-align: left;">Email:</label>
+             
+                {%if fail %}
+                    <span style= " color:red;margin-left: 20px;">
+                        error in email or password
+                    </span>
+                {% endif %}
+            
+            
+            {%if login_success %}
+                <span style= " color:green;margin-left: 20px;"> 
+                    Add user Success
+                </span>
+            {% endif %}
+            
+            <input type="email" style="width: 100%;" name="email" id="email">
+
+            <label for="password" style="text-align: left;" required>PassWord:</label>
+            <input type="password" style="width: 100%;" name="password" id="password" required>
+            <br>
+            
+            
+            <br>
+            <input name="" style="width: 40%;margin-bottom: 32px;" id="" class="btn btn-primary" type="submit" value="submit">
+            <a href="{% url 'register'%}"style= "float: right;">Register</a>
+
+        </form>
+        
+    </div>
+</body>
+</html>
