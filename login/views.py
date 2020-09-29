@@ -99,24 +99,18 @@ def login_accept(request):
                 
                 Member.objects.filter(email = user.email).update(status = "active") 
                 
-                try:
-                    mymember = Member.objects.get(status = "active")
-                    name = mymember.username
-                    email = mymember.email
-                    gender = mymember.gender
-                    
-                    
-                    mypost = Posts.objects.all()
-                    
-                    
-                    return render(request,'hposts/homepost.html',{"items" : mypost, 'name': name , 'email': email, 'gender' : gender})
                 
-                except:
-                    
-                    return render(request,'sign/login.html')
-                
-                return render(request, 'hposts/homepost.html',{})
+                mymember = Member.objects.get(status = "active")
+                name = mymember.username
+                email = mymember.email
+                gender = mymember.gender
 
+
+                mypost = Posts.objects.all()
+                    
+                    
+                return render(request,'hposts/homepost.html',{"items" : mypost, 'name': name , 'email': email, 'gender' : gender})
+                
             else:
                 
                 return render (request, 'sign/login.html',{'fail' : "fail"})
