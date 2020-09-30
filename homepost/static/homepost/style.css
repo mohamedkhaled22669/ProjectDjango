@@ -1,0 +1,258 @@
+/* body {
+    background-color: brown;
+} */
+
+h2 {
+    text-align: center; margin: 50px;
+}
+
+
+.header {
+
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar .logout {
+    text-decoration: none;
+}
+
+
+
+/* Home Page */
+.content {
+    width:70%;
+    height: 400px; 
+    border: 1px solid #999; 
+    margin: auto; 
+    overflow: hidden;
+}
+
+.home .item-left {
+    float: left; 
+    width: 50%;
+    height: 100%;
+}
+
+.home .item-left .email {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+
+
+.home .item-left .sup{
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+
+.home .item-left .sup h5{
+    display: inline-block;
+}
+
+.home .item-left .cont {
+    width: 100%;height: 20px; padding: 5px;
+}
+
+
+.home .item-left .cont p {
+    width: 100%; margin-bottom: 10px; border: 1px solid #990;height: 307px;
+}
+
+
+.home .image {
+    float: left;border-left: 1px solid #999; width: 50%;height: 100%;
+}
+
+.home .image img {
+    width: 100%;
+}
+
+
+.home .home-btn {
+    display: block; width:70%; margin: auto; padding-top: 5px;
+}
+
+.home .home-btn .txt {
+    width: 0px;height: 0px;
+}
+
+
+.home .home-btn .btn {
+    width: 150px;
+}
+
+
+
+
+/* Add Page */
+.add-page {
+
+}
+
+.add-page .content {
+    width:70%; height: 400px; border: 1px solid #999; margin: auto; overflow: hidden;
+}
+
+.add-page .item-left {
+    float: left; width: 50%;height: 100%;
+}
+
+.add-page .item-left .email {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+
+.add-page .item-left .email h4 {
+    font-size: 14px; width: 57%;
+}
+
+.add-page .item-left .sup {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+
+.add-page .item-left .sup h5 {
+    display: inline-block; width: 15%;
+}
+
+.add-page .item-left .sup input {
+    width: 65%;
+}
+
+.add-page .item-left .cont {
+    width: 100%;height: 20px; padding: 5px;
+}
+
+.add-page .item-left .cont .txt {
+    width: 100%; margin-bottom: 10px;
+}
+
+.add-page .up-btn {
+    display: block; width:70%; margin: auto; padding-top: 5px;
+}
+
+.add-page .up-btn .btn {
+    width: 150px;
+} 
+
+.add-page .image {
+    float: left;border-left: 1px solid #999; width: 50%;height: 100%;
+}
+
+
+/* Page Select post */
+.sel-page {
+
+}
+
+.sel-page .content {
+    width:70%; height: 400px; border: 1px solid #999; margin: auto; overflow: hidden;
+}
+
+.sel-page .item-left {
+    float: left; width: 50%;height: 100%;
+}
+
+.sel-page .item-left .email {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+
+.sel-page .item-left .sup {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+.sel-page .item-left .sup h5{
+    display: inline-block;
+}
+
+.sel-page .item-left .cont {
+    width: 100%;height: 20px; padding: 5px;
+}
+.sel-page .item-left .cont p{
+    width: 100%; margin-bottom: 10px; border: 1px solid #990;height: 307px;
+}
+
+
+.sel-page .image {
+    float: left;border-left: 1px solid #999; width: 50%;height: 100%;
+}
+.sel-page .image img {
+    width: 100%;
+}
+
+.sel-page .act {
+    display: block; width:70%; margin: auto; padding-top: 5px;
+}
+
+.sel-page .act form {
+    display: inline-block;
+}
+
+.sel-page .act form .txt {
+    width: 0px;height: 0px;
+}
+.sel-page .act form .btn {
+    width: 150px;
+}
+
+
+
+
+/* Updata Page */
+.up-page {}
+
+.up-page .content {
+    width:70%; height: 400px; border: 1px solid #999; margin: auto; overflow: hidden;
+}
+
+.up-page .item-left {
+    float: left; width: 50%;height: 100%;
+}
+
+.up-page .item-left .email {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+
+.up-page .item-left .email h4 {
+    font-size: 14px; width: 57%;
+}
+
+.up-page .item-left .sup {
+    width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;
+}
+.up-page .item-left .sup h5 {
+    display: inline-block; width: 15%;
+}
+
+.up-page .item-left .sup h5 {
+    display: inline-block; width: 15%;
+}
+
+.up-page .item-left .sup .txt {
+    width: 65%;
+}
+
+.up-page .item-left .cont {
+    width: 100%;height: 20px; padding: 5px;
+}
+
+.up-page .item-left .cont .txt {
+    width: 100%; margin-bottom: 10px;
+}
+
+.up-page .image {
+    float: left;border-left: 1px solid #999; width: 50%;height: 100%;
+}
+
+.up-page .image img {
+    width: 100%;
+}
+
+.up-page .act {
+    display: block; width:70%; margin: auto; padding-top: 5px;
+}
+
+.up-page .act .txt {
+    width: 0%; height: 0%;
+}
+
+.up-page .act .btn {
+    width: 150px;
+}

@@ -2,30 +2,33 @@
 {% extends 'base.html' %}
 
 {% block body %}
-  <h2 style= "text-align: center; margin: 50px;"> Hello from page Add Post </h2>
-  <form name="form" action="/addpost/succes/" method="POST">{% csrf_token %}
-    <div style="width:70%; height: 400px; border: 1px solid #999; margin: auto; overflow: hidden;">
-      <div style="float: left; width: 50%;height: 100%;">
-        <div style="width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;">
-          <h4>Posted By : <input type="email" name="email" id="email"  value="{{email}}" style="font-size: 14px; width: 57%;" readonly> </h4> 
+  <h2> Hello from page Add Post </h2>
+
+  <main class="add-page">
+    <form name="form" action="/addpost/succes/" method="POST">{% csrf_token %}
+      <div class="content">
+        <div class="item-left">
+          <div class="email">
+            <h4>Posted By : <input type="email" name="email" id="email"  value="{{email}}" readonly> </h4> 
+          </div>
+          <div class="sup">
+            <h5>Supject :</h5> <input type="text" name="topic" id="topic" >
+          </div>
+          <div class="cont">
+            <textarea placeholder="Content" name="content" class="txt" id="content"  cols="30" rows="12"></textarea>
+          </div>
         </div>
-        <div style="width: 100%;height: 40px; border-bottom: 1px #999 solid;padding: 5px;">
-          <h5 style="display: inline-block; width: 15%;">Supject :</h5> <input style="width: 65%;" type="text" name="topic" id="topic" >
-        </div>
-        <div style="width: 100%;height: 20px; padding: 5px;">
-          <textarea placeholder="Content" name="content" id="content" style="width: 100%; margin-bottom: 10px;" cols="30" rows="12"></textarea>
-        </div>
+        <div class="image">
+          {% comment %} <input type="file" name="picture" > {% endcomment %}
+          <!-- <img style="width: 100%;" src="#" alt="" id="picture"> -->
+        </div>     
       </div>
-      <div style="float: left;border-left: 1px solid #999; width: 50%;height: 100%;">
-        {% comment %} <input type="file" name="picture" > {% endcomment %}
-        <!-- <img style="width: 100%;" src="#" alt="" id="picture"> -->
-      </div>     
-    </div>
-    <div style="display: block; width:70%; margin: auto; padding-top: 5px;">
-      <input type="submit" class="btn btn-success" value="Add Post" style="width: 150px;">
-
-    </div>   
-
-  </form>
+      <div class="up-btn">
+        <input type="submit" class="btn btn-success" value="Add Post">
+  
+      </div>   
+  
+    </form>
+  </main>
 
 {% endblock %}
